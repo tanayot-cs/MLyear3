@@ -1,16 +1,16 @@
-{
+
+  {
     "version": 2,
     "builds": [
       {
-        "src": "index.html",
+        "src": "template/index.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/index.html"
+        "dest": "template/index.html"
       }
     ]
   }
-  
