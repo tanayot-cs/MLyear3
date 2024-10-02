@@ -2,10 +2,9 @@ import sys
 import joblib
 import pandas as pd
 from flask import Flask, render_template, request
-
 # Load models
-rf_model = joblib.load('C:/Users/ACER-444/Downloads/random_forest_model.pkl')
-xgb_model = joblib.load('C:/Users/ACER-444/Downloads/xgboost_model.pkl')
+rf_model = joblib.load('model/random_forest_model.pkl')
+xgb_model = joblib.load('model/xgboost_model.pkl')
 
 app = Flask(__name__)
 
